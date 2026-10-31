@@ -1,0 +1,216 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval Prediction System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">LoanPredict</a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#dataset">Dataset</a></li>
+                <li><a href="#model">Model</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#github">GitHub</a></li>
+            </ul>
+
+            <a href="https://loan-approval-prediction-dl-n9rxb7r4zarajosqcrns7d.streamlit.app/"
+               class="nav-button" target="_blank" rel="noopener noreferrer">
+                Try Prediction
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="tagline">DEEP LEARNING PROJECT</p>
+
+                <h1>Smart Loan Approval <span>Prediction</span></h1>
+
+                <p>
+                    An Artificial Neural Network based academic project
+                    that demonstrates loan approval prediction using
+                    applicant financial information.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="https://loan-approval-prediction-dl-n9rxb7r4zarajosqcrns7d.streamlit.app/"
+                       class="primary-button" target="_blank" rel="noopener noreferrer">
+                        Try Prediction
+                    </a>
+
+                    <a href="https://github.com/aimenkhannn27-cmyk/Loan-Approval-Prediction-DL"
+                       class="secondary-button" target="_blank" rel="noopener noreferrer">
+                        Explore Project
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <p class="section-label">INTRODUCTION</p>
+
+            <h2>About the Project</h2>
+
+            <p>
+                This project uses Deep Learning to demonstrate how
+                applicant information can be processed by an Artificial
+                Neural Network (ANN) to predict a loan application
+                outcome. It is developed for academic and educational purposes.
+            </p>
+        </section>
+
+        <!-- Dataset Section -->
+        <section class="section" id="dataset">
+            <p class="section-label">DATA</p>
+
+            <h2>Dataset Overview</h2>
+
+            <p>
+                The model uses a secondary dataset obtained from Kaggle.
+                It contains applicant information such as income,
+                education, employment status, loan amount, credit score
+                and asset values.
+            </p>
+
+            <br>
+
+            <p>
+                <strong>Dataset Source:</strong>
+                Loan Approval Prediction Dataset by Archit Sharma.
+            </p>
+
+            <a href="https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset"
+               class="primary-button"
+               target="_blank"
+               rel="noopener noreferrer">
+                View Kaggle Dataset
+            </a>
+        </section>
+
+        <!-- Model Architecture -->
+        <section class="section" id="model">
+            <p class="section-label">DEEP LEARNING</p>
+
+            <h2>ANN Model Architecture</h2>
+
+            <div class="model-box">
+                <div class="layer">Input Layer</div>
+                <div class="arrow">↓</div>
+
+                <div class="layer">Dense Layer — 64 Neurons (ReLU)</div>
+                <div class="arrow">↓</div>
+
+                <div class="layer">Dropout — 0.2</div>
+                <div class="arrow">↓</div>
+
+                <div class="layer">Dense Layer — 32 Neurons (ReLU)</div>
+                <div class="arrow">↓</div>
+
+                <div class="layer">Dropout — 0.2</div>
+                <div class="arrow">↓</div>
+
+                <div class="layer">Output Layer — 1 Neuron (Sigmoid)</div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="section" id="results">
+            <p class="section-label">PERFORMANCE</p>
+
+            <h2>Model Evaluation</h2>
+
+            <div class="stats">
+
+                <div class="stat-card">
+                    <h3>97.31%</h3>
+                    <p>ANN Test Accuracy</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>50</h3>
+                    <p>Training Epochs</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>ANN</h3>
+                    <p>Deep Learning Model</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- GitHub Section -->
+        <section class="section" id="github">
+            <p class="section-label">SOURCE CODE</p>
+
+            <h2>Explore Our GitHub Repository</h2>
+
+            <p>
+                Access the project source code, trained ANN model files,
+                preprocessing files and training notebook.
+            </p>
+
+            <br>
+
+            <a href="https://github.com/aimenkhannn27-cmyk/Loan-Approval-Prediction-DL"
+               class="primary-button"
+               target="_blank"
+               rel="noopener noreferrer">
+                View GitHub Repository
+            </a>
+        </section>
+
+        <!-- Live Demo Section -->
+        <section class="section demo-section" id="demo">
+            <p class="section-label">LIVE DEMONSTRATION</p>
+
+            <h2>Try the Prediction System</h2>
+
+            <p>
+                Open the deployed Streamlit application to enter applicant
+                information and view a sample model prediction.
+            </p>
+
+            <a href="https://loan-approval-prediction-dl-n9rxb7r4zarajosqcrns7d.streamlit.app/"
+               class="primary-button"
+               id="demo-link"
+               target="_blank"
+               rel="noopener noreferrer">
+                Open Prediction App
+            </a>
+
+            <p class="note">
+                Powered by an Artificial Neural Network.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Loan Approval Prediction System | Deep Learning Academic Project</p>
+
+        <p>
+            For educational demonstration only.
+            Not for actual lending decisions.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
